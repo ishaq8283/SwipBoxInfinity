@@ -113,8 +113,8 @@ public class Page {
 				options.addArguments("--disable-extensions");
 				options.addArguments("--disable-infobars");
 				// ChromeOptions options = new ChromeOptions();
-	                options.addArguments("headless");
-	                options.addArguments("window-size=1200x600");
+//	                options.addArguments("headless");
+//	                options.addArguments("window-size=1200x600");
 				driver = new ChromeDriver(options);
 
 				// driver = new ChromeDriver();
