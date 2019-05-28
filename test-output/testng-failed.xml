@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.swipBox.listners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.swipbox.testcases.ServicePointFilters">
+        <methods>
+          <include name="servicePointsFiltersByType" invocation-numbers="0"/>
+          <include name="servicePointsFiltersByAddress"/>
+          <include name="servicePointsFiltersById"/>
+          <include name="tearDown"/>
+          <include name="servicePoints"/>
+          <include name="servicePointsFiltersBylocation"/>
+        </methods>
+      </class> <!-- com.swipbox.testcases.ServicePointFilters -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
